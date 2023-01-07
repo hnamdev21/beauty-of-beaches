@@ -1,6 +1,6 @@
 assets/font-text
 assets/icon
-# assets/img
+assets/img
 
 src/angularjs/angularjs.min.js
 src/angularjs/angularjs-route.js
