@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  font-size: 62.5%;
+}
+
+p {
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: unset;
+}
+
+nav,
+ul {
+  list-style-type: none;
+}
+
+textarea {
+  resize: none;
+}
