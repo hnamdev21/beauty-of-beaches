@@ -15,13 +15,267 @@
         <link rel="stylesheet" href="/assets/css/font.css">
         <link rel="stylesheet" href="/assets/css/reset.css">
         <link rel="stylesheet" href="/assets/css/commom.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
         <link rel="stylesheet" href="/assets/css/responsive.css">
         <link rel="stylesheet" href="/assets/css/animation.css">
         <link rel="stylesheet" href="/assets/css/about.css">
         <link rel="stylesheet" href="/assets/css/contact.css">
+
+        <script src="/src/javaScript/animation/handle-nav-link.js"></script>
+        <script src="/src/javaScript/animation/handle-header.js"></script>
+        <script src="/src/javaScript/animation/handle-click-favorite.js"></script>
     </head>
 
-    <body>
-        
+    <body class="home-page">
+
+
+
+        <header>
+            <div class="inner">
+                <div class="wrapper-logo pos-center-y">
+                    <a href="/home">
+                        <img src="/assets/img/logo/logo_beachourSVG-white.svg" alt="Logo Beachour" class="logo">
+                    </a>
+                </div>
+
+                <nav class="wrapper-nav pos-center-y flex-center">
+                    <li><a href="/home" class="nav-link">Home</a></li>
+                    <li><a href="/gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="/festival" class="nav-link">Festival</a></li>
+                    <li><a href="/contact" class="nav-link">Contact</a></li>
+                    <li><a href="/about" class="nav-link">About</a></li>
+                    <li><a href="/support" class="nav-link">Support</a></li>
+                </nav>
+
+                <div class="wrapper-other-opt pos-center-y">
+                    <div class="other-opt__favorite pos-relative">
+                        <i class="heart-icon fa-regular fa-heart"></i>
+                        <div class="circle wrapper-num-favorite">
+                            <span class="num-favorite pos-center">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <main>
+            <section class="wrapper sliders-section">
+                <div class="slider">
+                    <img src="/assets/img/sliders/whitehaven-beach.jpg" alt="White Haven Beach">
+                </div>
+            </section>
+
+            <section class="wrapper zone-section pos-relative">
+                <div class="wrapper-wave">
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                </div>
+
+                <div class="inner">
+                    <div class="wrapper-title pos-relative">
+                        <h2>You are finding a beach for a vacation?</h2>
+                        <h2>Let's see more than 80 places</h2>
+                        <a href="/gallery" class="view-btn">View all</a>
+                    </div>
+
+                    <div class="wrapper-zones grid-12">
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wrapper list-section top-10-famous">
+                <div class="inner">
+                    <h4 class="title-list">Top 10 most famous of beaches in the World</h4>
+                    <div class="scroll-btn pos-center-y">
+                        <button class="circle left-btn pos-center-y"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="circle right-btn pos-center-y"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                    <div class="wrapper-list">
+                        <div class="card-list">
+                            <div class="card pos-relative">
+                                <div class="card__top pos-relative">
+                                    <img src="/assets/img/sliders/whitehaven-beach.jpg" alt="">
+                                    <button><i class="heart-icon fa-regular fa-heart"></i></button>
+                                </div>
+                        
+                        
+                                <div class="card__bot">
+                                    <h4 class="beach__name">Name</h4>
+                                    <ul>
+                                        <li class="beach__location">Location: 9999</li>
+                                        <li class="beach__location">Rate: 9999</li>
+                                        <li class="beach__visited">Visited: 9999</li>
+                                    </ul>
+                        
+                                </div>
+                                <a href="#" class="desc pos-center-x">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wrapper feedback-section">
+                <div class="inner">
+                    <h2 class="title-list">Latest feedbacks</h2>
+                    <div class="wrapper-list-auto">
+                        <div class="feedback-list">
+                            <div class="feedback">
+                                <div class="feedback__top pos-relative">
+                                    <h4 class="feedback__name">Name</h4>
+                                    <div class="feedback__date-upload">dd/mm/yyyy</div>
+                                </div>
+                        
+                                <div class="feedback__bot">
+                                    <div class="feedback__img">
+                                        <img src="/assets/img/sliders/whitehaven-beach.jpg" alt="">
+                                    </div>
+
+                                    <p class="feedback__p">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eligendi cum magni sequi veritatis adipisci culpa explicabo, labore, quam molestiae quaerat.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wrapper festival-section pos-relative">
+                <div class="inner">
+                    <h2>Upcoming festivals</h2>
+
+                    <div class="festival-list">
+                        <div class="festival-card flex">
+                            <div class="festival__img">
+                                <img src="/assets/img/sliders/whitehaven-beach.jpg" alt="">
+                            </div>
+
+                            <div class="festival__info pos-relative">
+                                <h4 class="festival__name">Name name name</h4>
+                                <p class="festival__location">Location: 999999</p>
+                                <p class="festival__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ad quibusdam doloribus, voluptatibus vitae nihil harum corporis dolorem atque, amet, repudiandae dolorum vero at natus sint. Accusantium modi repellendus sit?</p>
+                                <div class="festival__countdown flex-center">
+                                    <div class="count count-month">0 <span>Month</span></div>
+                                    <div class="count count-day">1 <span>Day</span></div>
+                                    <div class="count count-hour">2 <span>Hours</span></div>
+                                    <div class="count count-minute">3 <span>Minutes</span></div>
+                                    <div class="count count-second">4 <span>Seconds</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="festival-card flex">
+                            <div class="festival__img">
+                                <img src="/assets/img/sliders/whitehaven-beach.jpg" alt="">
+                            </div>
+
+                            <div class="festival__info pos-relative">
+                                <h4 class="festival__name">Name name name</h4>
+                                <p class="festival__location">Location: 999999</p>
+                                <p class="festival__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ad quibusdam doloribus, voluptatibus vitae nihil harum corporis dolorem atque, amet, repudiandae dolorum vero at natus sint. Accusantium modi repellendus sit?</p>
+                                <div class="festival__countdown flex-center">
+                                    <div class="count count-month">0 <span>Month</span></div>
+                                    <div class="count count-day">1 <span>Day</span></div>
+                                    <div class="count count-hour">2 <span>Hours</span></div>
+                                    <div class="count count-minute">3 <span>Minutes</span></div>
+                                    <div class="count count-second">4 <span>Seconds</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="/festival" class="festival-link pos-center-x">See more</a>
+                </div>
+            </section>
+
+            <section class="wrapper traffic-section">
+                <div class="inner">
+                    <h2>Traffic website<i class="stock-icon fa-solid fa-arrow-trend-up"></i></h2>
+                    <div class="count-traffic flex-center">
+                        <div class="count count-overall"><span>Overall</span>1234567</div>
+                        <div class="count count-last-week"><span>Last week</span>1234567</div>
+                        <div class="count count-last-month"><span>Last month</span>1234567</div>
+                        <div class="count count-last-year"><span>Last year</span>1234567</div>
+                        <div class="count count-return-rate"><span>Returning viewer rate</span>89%</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wrapper list-section top-10-visited">
+                <div class="inner">
+                    <h4 class="title-list">Top 10 most visited beaches in the World</h4>
+                    <div class="scroll-btn pos-center-y">
+                        <button class="circle left-btn pos-center-y"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="circle right-btn pos-center-y"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                    <div class="wrapper-list">
+                        <div class="card-list">
+                            <div class="card pos-relative">
+                                <div class="card__top pos-relative">
+                                    <img src="/assets/img/sliders/whitehaven-beach.jpg" alt="">
+                                    <button><i class="heart-icon fa-regular fa-heart"></i></button>
+                                </div>
+            
+            
+                                <div class="card__bot">
+                                    <h4 class="beach__name">Name</h4>
+                                    <ul>
+                                        <li class="beach__location">Location: 9999</li>
+                                        <li class="beach__location">Rate: 9999</li>
+                                        <li class="beach__visited">Visited: 9999</li>
+                                    </ul>
+            
+                                </div>
+                                <a href="#" class="desc pos-center-x">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <footer>
+            <div class="inner">
+                <div class="footer__top">
+
+                </div>
+
+
+                <div class="footer__bot">
+                    <h4>Get new infomartion by</h4>
+
+                    <div class="bot__opt flex">
+                        <div class="bot__social-media pos-relative">
+                            <h5>Follow us</h5>
+                            <ul class="flex-center">
+                                <li class="flex-center">
+                                    <a href="#"><i class="ti-facebook"></i></a>
+                                </li>
+                                <li class="flex-center">
+                                    <a href="#"><i class="ti-instagram"></i></a>
+                                </li>
+                                <li class="flex-center">
+                                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bot__email">
+                            <form action="" class="form-get-news pos-relative">
+                                <label for="">Enter you email to get news</label>
+                                <input type="email" name="" id="" class="email-input pos-center-x">
+                                <input type="submit" value="Send" class="send-input">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

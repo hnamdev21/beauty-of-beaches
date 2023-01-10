@@ -2,6 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border-collapse: inherit;
+  outline: none;
+  border: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }
 
 body {
@@ -27,6 +34,7 @@ a {
 button {
   border: none;
   background-color: unset;
+  cursor: pointer;
 }
 
 nav,
