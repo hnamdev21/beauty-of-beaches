@@ -75,25 +75,25 @@ header .wrapper-other-opt {
 }
 
 /* Main */
-.home-page section:nth-child(3) {
+.top-10-famous {
   background: linear-gradient(to bottom, var(--ocean), #015871e6);
 }
 
-.home-page section:nth-child(4) {
+.feedback-section {
   background: linear-gradient(to bottom, #015871e6, #015871cc);
 }
 
-.home-page section:nth-child(5) {
+.festival-section {
   background: linear-gradient(to bottom, #015871cc, #015871b3);
 }
 
-.home-page section:nth-child(6) {
+.traffic-section {
   background: linear-gradient(to bottom, #015871b3, #01587199);
   margin-top: 0;
   padding-top: 50px;
 }
 
-.home-page section:nth-child(7) {
+.list-section.top-10-visited {
   background: linear-gradient(to bottom, #01587199, #01587180);
   margin-top: 0;
   padding-top: 50px;
@@ -493,8 +493,7 @@ header .wrapper-other-opt {
 
 /* Traffic section */
 .traffic-section {
-  margin-top: 20px;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 .traffic-section h2 {

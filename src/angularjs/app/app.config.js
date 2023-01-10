@@ -10,12 +10,9 @@ angular.module("app")
             .when("/", {
                 templateUrl: "/src/pages/home.html" 
             })
-            .when("/index.html", {
-                templateUrl: "/src/pages/home.html" 
-            })
-            .when("/home", {
-                templateUrl: "/src/pages/home.html"
-            })
+            // .when("/home", {
+            //     templateUrl: "/src/pages/home.html" 
+            // })
             .when("/contact", {
                 templateUrl: "/src/pages/contact.html"
             })

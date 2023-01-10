@@ -6,6 +6,7 @@ window.addEventListener("load", () => {
         heartIcon.addEventListener("click", changeIcon)
 
         function changeIcon(event) {
+            console.log(`2222`)
             if (event.target.classList == "heart-icon fa-regular fa-heart") {
                 event.target.classList = `heart-icon fa-solid fa-heart`
             } else {
