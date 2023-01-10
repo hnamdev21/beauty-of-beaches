@@ -3,7 +3,9 @@
 angular.module("app", [
     // External
     "ngRoute",
-    "ngResource"
+    "ngResource",
 
     // Internal
+    "headerPage",
+    "footerPage"
 ])

@@ -8,18 +8,24 @@ angular.module("app")
 
         $routeProvider
             .when("/", {
-                templateUrl: "index.html"
+                templateUrl: "/src/pages/home.html" 
+            })
+            .when("/index.html", {
+                templateUrl: "/src/pages/home.html" 
             })
             .when("/home", {
-                templateUrl: "index.html"
+                templateUrl: "/src/pages/home.html"
             })
             .when("/contact", {
-                templateUrl: "contact.html"
+                templateUrl: "/src/pages/contact.html"
             })
             .when("/about", {
-                templateUrl: "about.html"
+                templateUrl: "/src/pages/about.html"
             })
             .when("/gallery", {
-                templateUrl: "gallery.html"
+                templateUrl: "/src/pages/gallery.html"
+            })
+            .when("/festival", {
+                templateUrl: "/src/pages/festival.html"
             })
     })
