@@ -216,6 +216,19 @@ header .wrapper-other-opt {
 }
 
 /* Card list */
+.wrapper-list {
+  overflow: auto;
+  height: 350px;
+}
+
+.card-list {
+  height: 340px;
+}
+
+.wrapper-list::-webkit-scrollbar {
+  display: none;
+}
+
 .list-section {
   height: 400px;
 }

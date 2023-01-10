@@ -6,6 +6,8 @@ angular.module("app", [
     "ngResource",
 
     // Internal
+    "renderData",
     "headerPage",
-    "footerPage"
+    "footerPage",
+    "topTenFamous"
 ])

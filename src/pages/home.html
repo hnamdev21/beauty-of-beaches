@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beachour</title>
-    <link rel="shortcut icon" href="/assets/img/logo/icon_logoSVG.svg" type="image/x-icon">
-    
-    <script src="/src/javaScript/animation/handle-click-favorite.js"></script>
-</head>
-<body>
+
     <section class="wrapper sliders-section">
         <div class="slider">
             <img src="/assets/img/sliders/whitehaven-beach.jpg" alt="White Haven Beach">
@@ -46,8 +35,8 @@
                 <button class="circle right-btn pos-center-y"><i class="fa-solid fa-angle-right"></i></button>
             </div>
             <div class="wrapper-list">
-                <div class="card-list">
-                    <div class="card pos-relative">
+                <div class="card-list flex">
+                    <div class="card pos-relative" ng-repeat="beach in topFamous">
                         <div class="card__top pos-relative">
                             <img src="/assets/img/sliders/whitehaven-beach.jpg" alt="">
                             <button><i class="heart-icon fa-regular fa-heart"></i></button>
@@ -55,7 +44,7 @@
     
     
                         <div class="card__bot">
-                            <h4 class="beach__name">Name</h4>
+                            <h4 class="beach__name">{{beach.name}}</h4>
                             <ul>
                                 <li class="beach__location">Location: 9999</li>
                                 <li class="beach__location">Rate: 9999</li>
@@ -190,7 +179,3 @@
             </div>
         </div>
     </section>
-</body>
-</html>
-
-
