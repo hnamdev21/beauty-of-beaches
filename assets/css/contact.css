@@ -35,10 +35,11 @@
 .btn{
     display: inline-block;
     text-decoration: none;  
-    background-color: #00b4d8;
+    background-image: linear-gradient(to bottom right, #00b4d8 , blue);
     border: none;
     outline: none;
-    color: black;
+    color: #fff;
+    font-size: 18px;
     padding: 12px 38px;
     border-radius: 50px;  
     cursor: pointer;
@@ -54,7 +55,7 @@
 .feedback-input__form {
     width: calc(1200px - 300px);
     min-height: 400px;
-    height: 600px;
+    height: 800px;
     border-radius: 5px; 
     box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
     padding: 2%;
@@ -63,12 +64,12 @@
 .inner-form {
     margin: 20px 0;
     width: 1200px;
-    height: 600px;
+    height: 800px;
     border: 0.5px solid #000;
     border-radius: 20px;
     background-color: #fff;
     box-shadow: var(--festival-shadow);
-    
+    overflow: hidden;
 }
 
 .full-name {
@@ -97,11 +98,11 @@
 }
 .form-input:not(:placeholder-shown) + .form-label,
 .form-input:focus + .form-label {
-    top: 16px;
+    top: 8px;
     padding: 4px;
     display: inline-block;
-    background-color: white;
-    color: aqua;
+    background-color: transparent;
+    color: #00b4d8;
 }
 .form-input {
     width: 100%;
@@ -116,7 +117,7 @@
     transition: .25s ease;
 }
 .form-input:focus {
-    border-color: aqua;
+    border-color: #00b4d8;
 }
 
 #feedback-comment {
@@ -130,4 +131,76 @@
 }
 .input-image {
     margin-left: 16px;
+    margin-top: 16px;
+}
+.input-image_container {
+    width: 450px;
+    height: 300px;
+}
+.input-image_container .input-image_wrapper {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px dashed #ccc;
+    overflow: hidden;
+}
+.input-image_wrapper .input-costumer-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-image_wrapper .input-costumer-image img {
+
+}
+
+.input-image_wrapper .icon {
+    font-size: 50px;
+    color: #00b4d8;
+    text-align: center;
+}
+.input-image_wrapper .text-line {
+    font-size: 20px;
+    font-weight: 500;
+    color: #00b4d8;
+}
+.input-image_wrapper #cancel-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #00b4d8;
+}
+.input-image_wrapper .file-name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 8px 0;
+    font-size: 18px;
+    background-image: linear-gradient(to bottom right, #00b4d8 , blue);
+}
+.input-image_container #custom-btn {
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 18px;
+    background-image: linear-gradient(to bottom right, #00b4d8 , blue);
 }
